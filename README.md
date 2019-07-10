@@ -15,7 +15,7 @@ API for the application.
 | Name   | JWT       |
 | In     | header    |
 
-### https://www.streamex.io/api/v2//public/health/ready
+### https://www.streamex.io/api/v2/public/health/ready
 
 #### GET
 
