@@ -29,7 +29,7 @@ Get application readiness status
 | ---- | -------------------------------- |
 | 200  | Get application readiness status |
 
-### https://www.streamex.io/api/v2//public/health/alive
+### https://www.streamex.io/api/v2/public/health/alive
 
 #### GET
 
@@ -43,7 +43,7 @@ Get application liveness status
 | ---- | ------------------------------- |
 | 200  | Get application liveness status |
 
-### https://www.streamex.io/api/v2//public/version
+### https://www.streamex.io/api/v2/public/version
 
 #### GET
 
@@ -57,7 +57,7 @@ Get running the version and build details.
 | ---- | ------------------------------------------ |
 | 200  | Get running the version and build details. |
 
-### https://www.streamex.io/api/v2//public/timestamp
+### https://www.streamex.io/api/v2/public/timestamp
 
 #### GET
 
@@ -71,7 +71,7 @@ Get server current time, in seconds since Unix epoch.
 | ---- | ----------------------------------------------------- |
 | 200  | Get server current time, in seconds since Unix epoch. |
 
-### https://www.streamex.io/api/v2//public/member-levels
+### https://www.streamex.io/api/v2/public/member-levels
 
 #### GET
 
@@ -85,7 +85,7 @@ Returns hash of minimum levels and the privileges they provide.
 | ---- | ------------------------------------------------------------ |
 | 200  | Returns hash of minimum levels and the privileges they provide. |
 
-### https://www.streamex.io/api/v2//public/markets/{market}/tickers
+### https://www.streamex.io/api/v2/public/markets/{market}/tickers
 
 #### GET
 
@@ -105,7 +105,7 @@ Get ticker of specific market.
 | ---- | ------------------------------ |
 | 200  | Get ticker of specific market. |
 
-### https://www.streamex.io/api/v2//public/markets/tickers
+### https://www.streamex.io/api/v2/public/markets/tickers
 
 #### GET
 
@@ -119,7 +119,7 @@ Get ticker of all markets.
 | ---- | -------------------------- |
 | 200  | Get ticker of all markets. |
 
-### https://www.streamex.io/api/v2//public/markets/{market}/k-line
+### https://www.streamex.io/api/v2/public/markets/{market}/k-line
 
 #### GET
 
@@ -143,7 +143,7 @@ Get OHLC(k line) of specific market.
 | ---- | ------------------------------------ |
 | 200  | Get OHLC(k line) of specific market. |
 
-### https://www.streamex.io/api/v2//public/markets/{market}/depth
+### https://www.streamex.io/api/v2/public/markets/{market}/depth
 
 #### GET
 
@@ -164,7 +164,7 @@ Get depth or specified market. Both asks and bids are sorted from highest price 
 | ---- | ------------------------------------------------------------ |
 | 200  | Get depth or specified market. Both asks and bids are sorted from highest price to lowest. |
 
-### https://www.streamex.io/api/v2//public/markets/{market}/trades
+### https://www.streamex.io/api/v2/public/markets/{market}/trades
 
 #### GET
 
@@ -188,7 +188,7 @@ Get recent trades on market, each trade is included only once. Trades are sorted
 | ---- | ------------------------------------------------------------ | ------- |
 | 200  | Get recent trades on market, each trade is included only once. Trades are sorted in reverse creation order. | [Trade] |
 
-### https://www.streamex.io/api/v2//public/markets/{market}/order-book
+### https://www.streamex.io/api/v2/public/markets/{market}/order-book
 
 #### GET
 
@@ -210,7 +210,7 @@ Get the order book of specified market.
 | ---- | --------------------------------------- | ----------- |
 | 200  | Get the order book of specified market. | [OrderBook] |
 
-### https://www.streamex.io/api/v2//public/markets
+### https://www.streamex.io/api/v2/public/markets
 
 #### GET
 
@@ -224,7 +224,7 @@ Get all available markets.
 | ---- | -------------------------- | -------- |
 | 200  | Get all available markets. | [Market] |
 
-### https://www.streamex.io/api/v2//public/currencies
+### https://www.streamex.io/api/v2/public/currencies
 
 #### GET
 
@@ -244,7 +244,7 @@ Get list of currencies
 | ---- | ---------------------- | ---------- |
 | 200  | Get list of currencies | [Currency] |
 
-### https://www.streamex.io/api/v2//public/currencies/{id}
+### https://www.streamex.io/api/v2/public/currencies/{id}
 
 #### GET
 
@@ -264,7 +264,7 @@ Get a currency
 | ---- | -------------- | ---------- |
 | 200  | Get a currency | [Currency] |
 
-### https://www.streamex.io/api/v2//account/balances/{currency}
+### https://www.streamex.io/api/v2/account/balances/{currency}
 
 #### GET
 
@@ -284,7 +284,7 @@ Get user account by currency
 | ---- | ---------------------------- | --------- |
 | 200  | Get user account by currency | [Account] |
 
-### https://www.streamex.io/api/v2//account/balances
+### https://www.streamex.io/api/v2/account/balances
 
 #### GET
 
@@ -298,7 +298,7 @@ Get list of user accounts
 | ---- | ------------------------- | --------- |
 | 200  | Get list of user accounts | [Account] |
 
-### https://www.streamex.io/api/v2//account/deposit_address/{currency}
+### https://www.streamex.io/api/v2/account/deposit_address/{currency}
 
 #### GET
 
@@ -319,7 +319,7 @@ Returns deposit address for account you want to deposit to by currency. The addr
 | ---- | ------------------------------------------------------------ | --------- |
 | 200  | Returns deposit address for account you want to deposit to by currency. The address may be blank because address generation process is still in progress. If this case you should try again later. | [Deposit] |
 
-### https://www.streamex.io/api/v2//account/deposits/{txid}
+### https://www.streamex.io/api/v2/account/deposits/{txid}
 
 #### GET
 
@@ -339,7 +339,7 @@ Get details of specific deposit.
 | ---- | -------------------------------- | --------- |
 | 200  | Get details of specific deposit. | [Deposit] |
 
-### https://www.streamex.io/api/v2//account/deposits
+### https://www.streamex.io/api/v2/account/deposits
 
 #### GET
 
@@ -362,7 +362,7 @@ Get your deposits history.
 | ---- | -------------------------- | --------- |
 | 200  | Get your deposits history. | [Deposit] |
 
-### https://www.streamex.io/api/v2//account/withdraws
+### https://www.streamex.io/api/v2/account/withdraws
 
 #### POST
 
@@ -431,7 +431,7 @@ Get your executed trades. Trades are sorted in reverse creation order.
 | ---- | ------------------------------------------------------------ | ------- |
 | 200  | Get your executed trades. Trades are sorted in reverse creation order. | [Trade] |
 
-### https://www.streamex.io/api/v2//market/orders/cancel
+### https://www.streamex.io/api/v2/market/orders/cancel
 
 #### POST
 
@@ -452,7 +452,7 @@ Cancel all my orders.
 | ---- | --------------------- | ------- |
 | 201  | Cancel all my orders. | [Order] |
 
-### https://www.streamex.io/api/v2//market/orders/{id}/cancel
+### https://www.streamex.io/api/v2/market/orders/{id}/cancel
 
 #### POST
 
@@ -472,7 +472,7 @@ Cancel an order.
 | ---- | ---------------- |
 | 201  | Cancel an order. |
 
-### https://www.streamex.io/api/v2//market/orders
+### https://www.streamex.io/api/v2/market/orders
 
 #### POST
 
@@ -520,7 +520,7 @@ Get your orders, results is paginated.
 | ---- | -------------------------------------- | ------ |
 | 200  | Get your orders, results is paginated. | [Order |
 
-### https://www.streamex.io/api/v2//market/orders/{id}
+### https://www.streamex.io/api/v2/market/orders/{id}
 
 #### GET
 
